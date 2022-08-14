@@ -115,16 +115,16 @@ short_term_government_bonds = Letras
 corporate_bonds = Obligaciones Negociables'''
 
 while True:
-    try:
+    '''try:
         oRange = 'A' + str(listLength)
         shtTest.range('A1').options(index=True, header=True).value = everything
         shtTest.range(oRange).options(index=True, header=False).value = options
         shtTest.range('S2').options(index=True, header=False).value = cauciones
         time.sleep(2)
     except:
-        print('Hubo un error al actualizar excel')
+        print('Hubo un error al actualizar excel')'''
 
-    '''sht = wb.sheets['HomeBroker']
+    sht = wb.sheets['HomeBroker']
     al30 = sht.range('A11:F11').value
     ran = sht.range('A11:F13').options(pd.DataFrame).value
     ra2 = sht.range('A11').expand().options(pd.DataFrame).value
@@ -132,4 +132,4 @@ while True:
     #app = xw.apps.active
     #app.quit()
     #print(sht.range('A11').expand('right').value)
-    print(al30[5],ra2)'''
+    print(al30[5],ra2)
